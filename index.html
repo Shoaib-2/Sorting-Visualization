@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorting</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="array_inputs">
+          <p>Size of the Array:</p>
+          <input
+            id="size_array"
+            type="range"
+            min="5"
+            max="80"
+            step="1"
+            value="80"
+          />
+          <p>Speed of the Algorithm:</p>
+          <input
+            id="speed_array"
+            type="range"
+            min="1"
+            max="5"
+            step="1"
+            value="3"
+          />
+        </div>
+        <div class="header">
+          <p class="nav-heading">SORTING VISUALIZATION</p>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="Time_Complexity">
+        <h3>TIME COMPLEXITY</h3>
+        <div class="Complex_container" id="Time_complex_Types">
+          <div class="Pair_Def">
+            <p class="Sub_head">Worst Case-</p>
+            <p id="Worst_time"></p>
+          </div>
+          <div class="Pair_Def">
+            <p id="Sub_head">Average Case-</p>
+            <p id="Average_time"></p>
+          </div>
+          <div class="Pair_Def">
+            <p id="Sub_head">Best Case-</p>
+            <p id="Best_time"></p>
+          </div>
+        </div>
+      </div>
+      <div id="array_container"></div>
+      <div class="buttons_container">
+        <select id="sort_dropdown">
+          <option value="" disabled selected>SELECT ALGORITHM</option>
+          <option value="selection_sort">SELECTION SORT</option>
+          <option value="insertion_sort">INSERTION SORT</option>
+          <option value="bubble_sort">BUBBLE SORT</option>
+          <option value="merge_sort">MERGE SORT</option>
+        </select>
+        <button id="randomize_array">NEXT ARRAY</button>
+        <button onclick="executeSelectedAlgorithm()">EXECUTE</button>
+        <button id="stopButton" onclick="stopSorting()">STOP</button>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Enter a Number for searching"
+        />
+        <button onclick="searchNumber1()">Search</button>
+        <div id="resultBinarySearch"></div>
+      </div>
+    </section>
+
+    <section>
+      <div id="popupInstruction" class="popup">
+        <div class="popup-content">
+          <h2>Welcome to Sorting Visualization System</h2>
+          <br />
+          <hr />
+          <p>
+            1. Slider buttons at the top control the speed of the algorithm and
+            size of the array.
+          </p>
+          <br />
+          <p>2. Select the desired algorithm from the drop-down menu.</p>
+          <br />
+          <p>3. Click on 'Next Array' to generate a random array.</p>
+          <br />
+          <p>4. Click on 'Execute' after selecting an Algorithm.</p>
+          <br />
+          <p>5. Click on 'Stop' to terminate the Algorithm.</p>
+          <br />
+          <p>6. 'Text input field' User can type a number</p>
+          <br />
+          <p>7. You can use the 'Search' option to find a specific number.</p>
+          <br />
+          <hr />
+          <p>
+            Please note: The top graph consists of the binary search which is
+            only implemented on the selection sort.
+          </p>
+          <br />
+
+          <button id="popupClosed">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="Sorting Scripts/main.js"></script>
+    <script src="Sorting Scripts/visualization.js"></script>
+    <script src="Sorting Scripts/selectionsort.js"></script>
+    <script src="Sorting Scripts/Insertionsort.js"></script>
+    <script src="Sorting Scripts/bubblesort.js"></script>
+    <script src="Sorting Scripts/mergesort.js"></script>
+  </body>
+</html>
