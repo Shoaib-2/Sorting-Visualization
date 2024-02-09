@@ -17,7 +17,7 @@ This project entails searching for data and sorting data which are fundamental a
 
 The objective is to help with the difficulties that arise in comprehending algorithms in a visually pleasing manner so that a student can easily understand what sorting is during the tutorials or classes provided by the lecturer. The aim is to implement a simple system which helps students to learn what algorithms are as well as implementing algorithms which sort numbers in the ascending or descending order. The searching algorithm uses linear and binary search. If a student or a user types a number, in the input bar provided, it then iterates through the sorting algorithms, and which then identifies the given number, while visually representing this through bars. 
 
-The main focus is to implement algorithms such as selection, insertion, bubble, and merge sort. Through the use of buttons (which will be programmed using HTML and CSS)2 the student can interact with the learning tool. This tool will also have extra features such as controlling the speed of the algorithm. This means that the student will be able handle the speed of the algorithm according to their understanding. The system will allow changing the size of the array and generating random numbers for the arrays using the GUI.  For example, data can be visualised as a bar graph, and therefore make it simpler to comprehend the algorithm. By inducing different colours for different algorithms, a student or a lecturer can easily identify which algorithm is running.
+The main focus is to implement algorithms such as selection, insertion, bubble, and merge sort. Through the use of buttons (which will be programmed using HTML and CSS) the student can interact with the learning tool. This tool will also have extra features such as controlling the speed of the algorithm. This means that the student will be able handle the speed of the algorithm according to their understanding. The system will allow changing the size of the array and generating random numbers for the arrays using the GUI.  For example, data can be visualised as a bar graph, and therefore make it simpler to comprehend the algorithm. By inducing different colours for different algorithms, a student or a lecturer can easily identify which algorithm is running.
 
 
 Initial areas of research:
@@ -28,5 +28,5 @@ Initial areas of research:
 •	Researching about using different sorting systems.
 •	Researching about how to visualize different algorithms in JavaScript.
 
-Expected outcomes:
-By the end of project, the complete system designing of the searching and sorting algorithm with animation and visualization will be completed with extra features to make it user friendly and intuitive for lecturers and students.
+outcomes:
+The complete system designing of the searching and sorting algorithm with animation and visualization is completed with extra features to make it user friendly and intuitive for lecturers and students.
